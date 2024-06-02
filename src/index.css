@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* ====================TELA PEQUENA==================== */
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    @font-face {
+        font-family: 'rick';
+        src: url('assets/get-schwifty.ttf') format('truetype');
+    }
+
+    body{
+        background-image: url('assets/rick-and-morty-in-another-planet_3840x2160_xtrafondos.com.jpg');
+        background-repeat: no-repeat;  
+        background-position: center; 
+        background-size: cover; 
+    }
+     
+    main {
+        margin: auto;
+        box-shadow: 1px 1px 10px black;
+        width: 350px;
+        height: 800px;
+    } 
+
+    form {
+        position: relative;
+        top: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .input1 {
+        background-color: #b8b8b8;
+        border: 2px solid gray;
+        text-align: center;
+        position: relative;
+        left: 1px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 130px;
+        height: 30px;
+        box-shadow: 0px 1px 3px black;
+    }
+    .input2 {
+        color: #0f660f;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        border: 2px solid gray;
+        width: 100px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .input3 {
+        background-color: green;
+        color: white;
+        width: 50PX;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid gray;
+        position: relative;
+        right: 1px;
+        box-shadow: 1px 1px 3px black;
+    }
+    .input3:active {
+        border: 3px solid green;
+        background-color: #0f660f;
+        transition-duration: .0100s;
+    }
+   
+    .fundoimg img {
+        border-radius: 130px;
+        position: relative;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 3px black;
+        width: 150px;
+        height: 150px;
+    }
+
+    .containerbotao {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 3em;
+    }
+    .botao {
+        position: relative;
+        top: 50px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px black;
+        border: 1px solid gray;
+        margin: 5px;
+        width: 60px;
+        height: 40px;
+    }
+    .botao:active {
+        border: 3px solid green;
+        background-color: #0f660f;
+        transition-duration: .0100s;
+    }
+
+    .containerinfo {
+        background-color: #6ac26a;
+        margin: auto;
+        position: relative;
+        top: 60px;
+        font-size: 10px;
+        width: 300px;
+        box-shadow: 1px 1px 3px black;
+        border: 1px solid gray;
+    }
+    .article, h1, h2 {
+        display: inline-block;
+        margin: 0px;
+        margin-left: 5px;
+    }
+
+    .episodio{
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 8em;
+        background-color: #6ac26a;
+        width: 300px;
+        font-size: 10px;
+        box-shadow: 1px 1px 3px black;
+        border: 1px solid gray;
+    }
+    .tituloepi {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .rick1 {
+        font-family: 'rick';
+        font-size: 50px;
+        color: green;
+        position: relative;
+        left: 20px;
+        margin-top: 15px;
+    }
+    .subtitulo {
+        position: relative;
+        top: 1.5em;
+        left: 2.9em;
+        color: green;
+        font-size: 20px;
+    }
+}
+
+/* ====================TELA GRANDE==================== */
+
+@media screen and (min-width: 992px){
+
+    @font-face {
+        font-family: 'rick';
+        src: url(assets/get-schwifty.ttf) format('truetype');
+    }  
+
+    body{
+        background-image: url('assets/rick-and-morty-in-another-planet_3840x2160_xtrafondos.com.jpg');
+        background-repeat: no-repeat;  
+        background-position: center; 
+        background-size: cover; 
+    }
+
+    main {
+        margin: auto;
+        box-shadow: 1px 1px 10px black;
+        width: 1000px;
+        height: 680px;
+    }
+
+    form {
+        margin-right: 150px;
+        position: relative;
+        top: 2em;
+        display: flex;
+        justify-content: center;
+        left: 60px;
+    }
+    .input1 {
+        background-color: #b8b8b8;
+        border: 2px solid gray;
+        text-align: center;
+        position: relative;
+        left: 1px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 130px;
+        height: 30px;
+        box-shadow: 0px 1px 3px black;
+    }
+    .input2 {
+        color: #0f660f;
+        text-align: center;
+        font-size: 20px;
+        border: 2px solid #b8b8b8;
+        width: 200px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .input3 {
+        background-color: green;
+        color: white;
+        width: 60px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-style: none;
+        position: relative;
+        right: 1px;
+        box-shadow: 1px 1px 5px black;
+        border: 1px solid gray;
+    }
+    .input3:active {
+        border: 3px solid green;
+        background-color: #0f660f;
+        transition-duration: .050s;
+    }
+
+    .fundoimg img {
+        border-radius: 130px;
+        position: relative;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 3px black;
+        width: 250px;
+        height: 250px;
+    }
+
+    .containerbotao {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 3em;
+    }
+    .botao {
+        position: relative;
+        top: 80px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px black;
+        border: 1px solid gray;
+        margin: 5px;
+        width: 60px;
+        height: 40px;
+    }
+    .botao:active {
+        border: 3px solid green;
+        background-color: #0f660f;
+        transition-duration: .0100s;
+    }
+
+    .containerinfo {
+        background-color: #6ac26a;
+        margin-left: 10px;
+        position: relative;
+        top: 60px;
+        font-size: 14px;
+        width: 400px;
+        box-shadow: 1px 1px 5px black;
+        border: 1px solid gray;
+    }
+    .article, h1, h2 {
+        display: inline-block;
+        margin: 0px;
+        margin-left: 5px;
+    }
+
+    .episodio{
+        display: block;
+        position: relative;
+        left: 48em;
+        bottom: 11em;
+        background-color: #6ac26a;
+        width: 500px;
+        font-size: 10px;
+        box-shadow: 1px 1px 5px black;
+        border: 1px solid gray;
+    }
+    .tituloepi {
+        font-size: 20px;
+    }
+
+    .rick1 {
+        font-family: 'rick';
+        font-size: 50px;
+        color: green;
+        position: relative;
+        left: 6.7em;
+        margin-top: 10px;
+    }
+}
+
+
+
